@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
     <link rel="stylesheet" href="/build/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-pink shadow sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow sticky-top">
         <div class="container">
             <a href="index.html" class="navbar-brand text-white fs-2 fw-bold">Recetas</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,11 +22,9 @@
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+                            <li><a class="dropdown-item" href="admin/porfile/index.html">Ver perfil</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Ver recetas</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="admin/index.html">Ver recetas</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -40,31 +39,36 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav w-100 d-flex justify-content-between">
-                    <li class="nav-item"><a href="#" class="nav-link">Comida mexicana</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Comida italiana</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Comida argentina</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">postres</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">cortes</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">ensaladas</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">desayunos</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida mexicana</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida italiana</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida argentina</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">postres</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">cortes</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">ensaladas</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">desayunos</a></li>
                 </ul>
             </div>
        </div>
     </nav>
 
     <div class="hero-categorias">
-        <form action="" class="container h-100">
+        <form action="search.html" class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-md-4 texto-buscar">
                     <p class="display-4">Encuentra una receta para tu próxima comida</p>
 
-                    <input type="search" name="buscar" class="form-control" placeholder="Buscar">
+                    <div class="d-flex">
+                        <input type="search" name="buscar" class="form-control" placeholder="Buscar">
+                        <a href="search.html">
+                            <i class="bi bi-search btn btn-light"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </form>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <h2 class="titulo-categoria text-uppercase mt-5 mb-4">últimas recetas</h2>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
@@ -74,7 +78,7 @@
                     <div class="card-body">
                         <h3 class="card-title">Receta 1</h3>
                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
-                        <a href="#" class="btn btn-pink w-100 text-white">Ver receta</a>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +88,7 @@
                     <div class="card-body">
                         <h3 class="card-title">Receta 2</h3>
                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
-                        <a href="#" class="btn btn-pink w-100 text-white">Ver receta</a>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +98,7 @@
                     <div class="card-body">
                         <h3 class="card-title">Receta 3</h3>
                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
-                        <a href="#" class="btn btn-pink w-100 text-white">Ver receta</a>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +108,7 @@
                     <div class="card-body">
                         <h3 class="card-title">Receta 4</h3>
                         <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
-                        <a href="#" class="btn btn-pink w-100 text-white">Ver receta</a>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
                     </div>
                 </div>
             </div>
@@ -112,7 +116,7 @@
     </div>
 
     <section class="mt-5 mb-5">
-        <div class="container">
+        <div class="container-fluid">
             <h2 class="titulo-categoria">Recetas mas votadas</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col">
@@ -126,7 +130,7 @@
                                 <p>a <span class="text-pink fw-bold">29 </span>les gusto</p>
                             </div>
                             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, rem necessitatibus. Quae, praesentium obcaecati nulla ipsa dolor vero animi dicta sed sapiente, repudiandae sint quam. Nam ut porro deserunt nihil!...</p>
-                            <a href="#" class="btn btn-pink w-100">Ver receta</a>
+                            <a href="receta.html" class="btn btn-dark w-100">Ver receta</a>
                         </div>
                     </div>
                 </div>
@@ -141,7 +145,7 @@
                                 <p>a <span class="text-pink fw-bold">29 </span>les gusto</p>
                             </div>
                             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, rem necessitatibus. Quae, praesentium obcaecati nulla ipsa dolor vero animi dicta sed sapiente, repudiandae sint quam. Nam ut porro deserunt nihil!...</p>
-                            <a href="#" class="btn btn-pink w-100">Ver receta</a>
+                            <a href="receta.html" class="btn btn-dark w-100">Ver receta</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +160,7 @@
                                 <p>a <span class="text-pink fw-bold">29 </span>les gusto</p>
                             </div>
                             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, rem necessitatibus. Quae, praesentium obcaecati nulla ipsa dolor vero animi dicta sed sapiente, repudiandae sint quam. Nam ut porro deserunt nihil!...</p>
-                            <a href="#" class="btn btn-pink w-100">Ver receta</a>
+                            <a href="receta.html" class="btn btn-dark w-100">Ver receta</a>
                         </div>
                     </div>
                 </div>
@@ -164,12 +168,12 @@
         </div>
     </section>
 
-    <footer class="bg-pink">
+    <footer class="bg-dark">
         <div class="container p-3">
             <ul class="nav justify-content-center border-bottom pb-3 mb-2">
-                <li class="nav-item"><a class="m-4 text-white" href="#">Recetas</a></li>
-                <li class="nav-item"><a class="m-4 text-white" href="#">Acceder</a></li>
-                <li class="nav-item"><a class="m-4 text-white" href="#">Registrar</a></li>
+                <li class="nav-item"><a class="m-4 text-white" href="index.html">Recetas</a></li>
+                <li class="nav-item"><a class="m-4 text-white" href="login.html">Acceder</a></li>
+                <li class="nav-item"><a class="m-4 text-white" href="registrar.html">Registrar</a></li>
             </ul>
             <p class="text-center text-white m-0">2021 &copy; Mario Jimenez Developer</p>
         </div>

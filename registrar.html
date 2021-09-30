@@ -22,11 +22,9 @@
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+                            <li><a class="dropdown-item" href="admin/porfile/index.html">Ver perfil</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Ver recetas</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -53,59 +51,73 @@
        </div>
     </nav>
 
-<article class="contenido-receta bg-white p-5 shadow">
-    <h1 class="text-center mb-4">Receta</h1>
 
-    <div class="imagen-receta">
-        <img class="img-fluid" src="build/images/receta1.jpg" alt="Imagen receta">
-    </div>
+<div class="container m-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Registrate con nosotros</div>
 
-    <div class="receta-meta mt-5">
-        <p>Escrito en: <a href="categorias.html" class="text-pink">Desayunos</a></p>
-        <p>
-            Autor:
-            <a href="admin/porfile/index.html" class="text-pink">Jose Alfredo Peña Jimenez</a>
-            
-        </p>
-        <p>
-            Fecha:
-            <span class="font-weight-bold text-pink">28-06-2021</span>
-        </p>
+                <div class="card-body">
+                    <form method="POST" action="admin/index.html" novalidate>
 
-       
+                        <div class="form-group row mb-3">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">Nombre completo</label>
 
-        <div class="ingredientes">
-            <h2 class="my-2 text-pink">Ingredientes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio ut eligendi expedita voluptatem quas fuga, rerum officia quia obcaecati architecto nam minima natus, dolores accusantium, magnam voluptas voluptate sit.</p>
-        </div>
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" required>
+                            </div>
+                        </div>
 
-        <div class="ingredientes">
-            <h2 class="my-2 text-pink">Preparación</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi ipsum, doloribus quo numquam aliquam aut et, ratione fugiat possimus doloremque, ipsa repellat soluta amet expedita illo maxime quisquam architecto? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio alias nulla quo nam iusto assumenda eaque recusandae. Maxime aut, necessitatibus rem sequi aspernatur voluptas similique neque recusandae facere. Eum, in?</p>
-        </div>
+                        <div class="form-group row  mb-3">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">Correo electrónico</label>
 
-        <div class="justify-content-center row text-center">
-            <div>
-                <a href="#" class="like-btn"></a>
-                <p>A <span class="text-pink fw-bold" id="contador">130</span> les gusto esto</p>
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" required autocomplete="email">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmar contraseña</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-dark">
+                                   Registrar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
     </div>
-</article>
+</div>
 
 
-<footer class="bg-dark">
+<footer class="bg-dark mt-5">
     <div class="container p-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-2">
-            <li class="nav-item"><a class="m-4 text-white" href="#">Recetas</a></li>
-            <li class="nav-item"><a class="m-4 text-white" href="#">Acceder</a></li>
-            <li class="nav-item"><a class="m-4 text-white" href="#">Registrar</a></li>
+            <li class="nav-item"><a class="m-4 text-white" href="index.html">Recetas</a></li>
+            <li class="nav-item"><a class="m-4 text-white" href="login.html">Acceder</a></li>
+            <li class="nav-item"><a class="m-4 text-white" href="registrar.html">Registrar</a></li>
         </ul>
         <p class="text-center text-white m-0">2021 &copy; Mario Jimenez Developer</p>
     </div>
 </footer>
   <script src="/build/js/bootstrap.bundle.js"></script>
-  <script src="build/js/like.js"></script>
 </body>
 </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="/build/css/bootstrap.css">
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow sticky-top">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand text-white fs-2 fw-bold">Recetas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="admin/porfile/index.html">Ver perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="admin/index.html">Ver recetas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light categorias-bg">
+       <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Categorias
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida mexicana</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida italiana</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida argentina</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">postres</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">cortes</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">ensaladas</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">desayunos</a></li>
+                </ul>
+            </div>
+       </div>
+    </nav>
+
+    <div class="col-md-10 mx-auto p-3">
+        <a href="/admin/recetas/create.html" class="btn btn-outline-primary mr-2 mt-3 text-uppercase font-weight-bold">
+            <svg class="icono w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            Crear receta
+        </a>
+        <a href="/admin/porfile/edit.html" class="btn btn-outline-success mr-2 mt-3 text-uppercase font-weight-bold">
+            <svg class="icono w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>    
+            Editar perfil
+        </a>
+        <a href="/admin/porfile/index.html" class="btn btn-outline-info mr-2 mt-3 text-uppercase font-weight-bold">
+            <svg class="icono w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            Ver perfil
+        </a>
+    </div>
+
+    <h2 class="text-center mb-5">Administra tus recetas</h2>
+
+    <div class="col-md-10 mx-auto bg-white p-3">
+
+        <table class="table">
+
+            <thead class="bg-dark text-light">
+
+                <tr>
+                    <th class="text-center" scole="col">Título</th>
+                    <th class="text-center" scole="col">Categoría</th>
+                    <th class="text-center" scole="col">Acciones</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+
+
+                    <td class="text-center">Pollo con patatas</td>
+
+                    <td class="text-center">Desayunos</td>
+
+                    <td class="text-center">
+                        <form action="" method="POST">
+                            <input type="submit" class="btn btn-danger d-block w-100 mb-1" value="Eliminar &times;">
+                        </form>
+                        <a href="/admin/recetas/update.html" class="btn btn-dark d-block  mb-1">Editar</a>
+                        <a href="../receta.html" class="btn btn-success d-block  mb-1">Ver</a>
+                    </td>
+                </tr>
+                <tr>
+
+
+                    <td class="text-center">Pastel de zanahoria</td>
+
+                    <td class="text-center">Postres</td>
+
+                    <td class="text-center">
+                        <form action="" method="POST">
+                            <input type="submit" class="btn btn-danger d-block w-100 mb-1" value="Eliminar &times;">
+                        </form>
+                        <a href="/admin/recetas/update.html" class="btn btn-dark d-block  mb-1">Editar</a>
+                        <a href="../receta.html" class="btn btn-success d-block  mb-1">Ver</a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <h2 class="text-center my-5">Recetas que te gustan</h2>
+
+        <div class="col-md-10 mx-auto bg-white p-3">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>Pollo con patatas</p>
+
+                    <a href="../receta.html" class="btn btn-outline-success text-uppercase">Ver receta</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>Hamburguesa al carbon</p>
+
+                    <a href="../receta.html" class="btn btn-outline-success text-uppercase">Ver receta</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>Huevos revueltos</p>
+
+                    <a href="../receta.html" class="btn btn-outline-success text-uppercase">Ver receta</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <p>Pollo frito</p>
+
+                    <a href="../receta.html" class="btn btn-outline-success text-uppercase">Ver receta</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-dark">
+        <div class="container p-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-2">
+                <li class="nav-item"><a class="m-4 text-white" href="index.html">Recetas</a></li>
+                <li class="nav-item"><a class="m-4 text-white" href="login.html">Acceder</a></li>
+                <li class="nav-item"><a class="m-4 text-white" href="registrar.html">Registrar</a></li>
+            </ul>
+            <p class="text-center text-white m-0">2021 &copy; Mario Jimenez Developer</p>
+        </div>
+    </footer>
+      <script src="/build/js/bootstrap.bundle.js"></script>
+</body>
+</html>

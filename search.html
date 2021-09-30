@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="/build/css/bootstrap.css">
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-white fs-2 fw-bold">Recetas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Ver recetas</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light categorias-bg">
+       <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Categorias
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav w-100 d-flex justify-content-between">
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida mexicana</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida italiana</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">Comida argentina</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">postres</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">cortes</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">ensaladas</a></li>
+                    <li class="nav-item"><a href="categorias.html" class="nav-link">desayunos</a></li>
+                </ul>
+            </div>
+       </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <h2 class="titulo-categoria text-uppercase mt-5 mb-4">Resultados de búsqueda</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <img src="/build/images/receta1.jpg" alt="Imagen receta" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Receta 1</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <img src="/build/images/receta2.jpg" alt="Imagen receta" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Receta 2</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <img src="/build/images/receta3.jpg" alt="Imagen receta" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Receta 3</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card shadow">
+                    <img src="/build/images/receta4.jpg" alt="Imagen receta" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Receta 4</h3>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet esse illo similique inventor...</p>
+                        <a href="receta.html" class="btn btn-dark w-100 text-white">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark">
+        <div class="container p-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-2">
+                <li class="nav-item"><a class="m-4 text-white" href="#">Recetas</a></li>
+                <li class="nav-item"><a class="m-4 text-white" href="#">Acceder</a></li>
+                <li class="nav-item"><a class="m-4 text-white" href="#">Registrar</a></li>
+            </ul>
+            <p class="text-center text-white m-0">2021 &copy; Mario Jimenez Developer</p>
+        </div>
+    </footer>
+      <script src="/build/js/bootstrap.bundle.js"></script>
+</body>
+</html>
